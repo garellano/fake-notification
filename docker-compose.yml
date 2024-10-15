@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fake-notification:
+    image: fake-notification:latest
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: default
