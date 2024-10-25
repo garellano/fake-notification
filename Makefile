@@ -18,6 +18,6 @@ compose-up:
 compose-down:
 	docker-compose down
 
-# Run the Spring Boot application with Maven
+# Run the Spring Boot application with Maven test
 run:
  mvn spring-boot:run
